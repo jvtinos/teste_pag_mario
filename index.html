@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario World</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+</head>
+<body>
+    
+<!--======================================================= Cabeçalho =======================================================-->
+    <header>
+        <div class="container">
+            <nav class="menu-navegacao">
+                <a href="index.html#Inicio">
+                    <img src="imagens/SuperMarioWorldLogo.png" alt="Logo do super Mario World ">
+                </a>
+                
+                <ul id="menu" class="botao-hover">
+                    <li><a href="index.html#Inicio">Inicio</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#locais">Destinos</a></li>
+                    <li><a href="#contato">Contatos</a></li>
+                </ul>
+            </nav>
+
+            <button id="btn-menu" class="botao-abrir-navegacao"></button>
+        </div>
+    </header>
+
+<!--======================================================= Primeira seção: Apresentação =======================================================-->
+    <Section id="Inicio" class="secao-principal">
+        <div class="reservar-background">
+            <h1>Seja bem-vindo<br>ao</h1>
+            <div class="flutuar">
+                <img src="imagens/SuperMarioWorldTursimo.png" alt="Super mario World Turismo">
+            </div>
+
+            <div class="botao botao-reservar">
+                <a href="#">Reserve aqui</a>
+            </div>
+        </div>
+    </Section>
+
+<!--======================================================= Segunda seção: Sobre =======================================================-->    
+    <section id="sobre" class="secao-sobre">
+        <div class="sobre-personagem">
+            <div class="foto-perfil">
+                <h2>MARIO</h2>
+                <img src="imagens/SuperMarioFotoPerfil.png" alt="Imagem do Mario">
+            </div>
+
+            <div class="sobre-mim">
+                <p>Me chamo Mario, mais conhecido como pé de sapo, sou guia turístico apaixonado pela Bahia e por transformar cada passeio em uma verdadeira aventura. Entre historias, paisagens e cultura local, minha missão é mostrar o melhor desse reino tropical de um jeito leve, autêntico e inesquecível.</p>
+                <div class="botao botao-conhecer-melhor">
+                    <a href="./Sobre Mario/index.html">ME CONHEÇA MELHOR</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+<!--======================================================= Terceira seção: Mapa =======================================================-->    
+    <section id="locais" class="secao-mapa">
+        <div class="MapaMenu">
+            <div class="map-bar">
+                <img class="mario-animacao" src="imagens/MarioTopMap.gif" alt="Miniatura do Mario andando">
+                <h3 title="Mapa da Bahia">BAHIA ISLAND</h3>
+            </div>
+
+            <div class="agua">
+                
+                <div class="mapa-bahia">
+
+                    <!--===================================================================== Salvador -->
+                    <a href="./Destinos- Mário Guia de Turístico/salvador.html" class="salvador-local locais"></a>
+                    <div class="salvador-popup popup">
+                        <span>Salvador</span>
+                        <img src="./Destinos- Mário Guia de Turístico/Imagens Salvador/pelourinho.png" alt="Ponto turistico: Pelourinho em Salvador">
+                    </div>
+
+                    <!--============================================================= Chapa Diamantina -->
+                    <a href="./Destinos- Mário Guia de Turístico/chapada.html" class="chapada-diamantina-local locais"></a>
+                    <div class="chapada-diamantina-popup popup">
+                        <span>Chapada<br>Diamantina</span>
+                        <img src="./Destinos- Mário Guia de Turístico/Imagens Chapada/CIDADES_VILAS/ibicoara.png" alt="Ponto: turistico Ibicoara em Chapada Diamantina">
+                    </div>
+
+                    <!--======================================================================= Ilheus -->
+                    <a href="./Destinos- Mário Guia de Turístico/ilheus.html" class="ilheus-local locais"></a>
+                    <div class="ilheus-popup popup">
+                        <span>ilhéus</span>
+                        <img src="./Destinos- Mário Guia de Turístico/Imagens Ilhéus/centrohistórico.png" alt="Ponto turistico: Centro Histórico em Ilhéus">
+                    </div>
+
+                    <!--================================================================= Porto Seguro -->
+                    <a href="./Destinos- Mário Guia de Turístico/portoseguro.html" class="porto-seguro-local locais"></a>
+                    <div class="porto-seguro-popup popup">
+                        <span>porto Seguro</span>
+                        <img src="./Destinos- Mário Guia de Turístico/Imagens Porto/coroavermelha.png" alt="Ponto turistico: Coroa Vermelha em Porto seguro">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--======================================================= Rodapé: contatos =======================================================-->    
+   <footer id="contato" class="rodape">
+        <div class="container-rodape">
+            <div class="contato">
+                <p>Email: <a href="mailto:turismobahia@marioworld.com">turismobahia@marioworld.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank">(77) 92964-6490</a></p>
+                <p>Instagram: <a href="https://instagram.com/seuusuario" target="_blank">@marioworldturismo</a></p>
+            </div>
+
+            <div class="direitos">
+                <p>© 2026 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
