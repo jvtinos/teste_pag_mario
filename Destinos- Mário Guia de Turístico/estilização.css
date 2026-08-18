@@ -1691,7 +1691,7 @@ header{
     min-height: 620px;
 
     padding-top: 130px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 
     background-size: cover;
     background-position: center;
@@ -1712,7 +1712,7 @@ header{
 
   .avaliacao-geral {
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .avaliacao-geral img {
@@ -1729,7 +1729,7 @@ header{
     line-height: 0.95;
 
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .subtitulo {
@@ -1751,7 +1751,7 @@ header{
   }
 }
 
-/*corrigindo modal*/
+/* ===== MODAL MOBILE ===== */
 
 @media (max-width: 768px) {
 
@@ -1759,40 +1759,67 @@ header{
   #modal-porto,
   #modal-ilheus,
   #modal-salvador {
-    width: 88%;
-    max-width: 420px;
+    width: 92vw !important;
+    max-width: 500px !important;
+
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    box-sizing: border-box;
   }
+
 
   #modal-chapada form,
   #modal-porto form,
   #modal-ilheus form,
   #modal-salvador form {
-    width: 100%;
-    padding: 24px 20px;
+    width: 100% !important;
+
+    padding: 24px 22px !important;
+
     box-sizing: border-box;
+
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
   }
+
 
   #modal-chapada input,
   #modal-chapada select,
   #modal-chapada textarea,
+
   #modal-porto input,
   #modal-porto select,
   #modal-porto textarea,
+
   #modal-ilheus input,
   #modal-ilheus select,
   #modal-ilheus textarea,
+
   #modal-salvador input,
   #modal-salvador select,
   #modal-salvador textarea {
-    font-size: 16px;
+
+    font-size: 16px !important;
+
+    max-width: 100% !important;
     box-sizing: border-box;
   }
+
 
   #modal-chapada textarea,
   #modal-porto textarea,
   #modal-ilheus textarea,
   #modal-salvador textarea {
-    width: 100%;
-    min-height: 110px;
+
+    width: 100% !important;
+    min-height: 105px !important;
   }
+
 }
