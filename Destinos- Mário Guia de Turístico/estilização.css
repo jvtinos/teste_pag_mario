@@ -1671,3 +1671,48 @@ header{
         padding: 10px;
     }
 }
+
+/*corrigindo modal*/
+@media (max-width: 768px) {
+
+  #modal-chapada,
+  #modal-porto,
+  #modal-ilheus,
+  #modal-salvador {
+    width: 88%;
+    max-width: 420px;
+  }
+
+  #modal-chapada form,
+  #modal-porto form,
+  #modal-ilheus form,
+  #modal-salvador form {
+    width: 100%;
+    padding: 24px 20px;
+    box-sizing: border-box;
+  }
+
+  #modal-chapada input,
+  #modal-chapada select,
+  #modal-chapada textarea,
+  #modal-porto input,
+  #modal-porto select,
+  #modal-porto textarea,
+  #modal-ilheus input,
+  #modal-ilheus select,
+  #modal-ilheus textarea,
+  #modal-salvador input,
+  #modal-salvador select,
+  #modal-salvador textarea {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  #modal-chapada textarea,
+  #modal-porto textarea,
+  #modal-ilheus textarea,
+  #modal-salvador textarea {
+    width: 100%;
+    min-height: 110px;
+  }
+}
