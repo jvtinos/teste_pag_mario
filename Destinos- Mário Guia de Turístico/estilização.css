@@ -1673,46 +1673,53 @@ header{
 }
 
 /*corrigindo modal*/
-@media (max-width: 768px) {
+/* MODAL PARA CELULARES / TOUCH */
+@media (hover: none) and (pointer: coarse) {
 
-  #modal-chapada,
-  #modal-porto,
-  #modal-ilheus,
-  #modal-salvador {
-    width: 88%;
-    max-width: 420px;
-  }
+    #modal-chapada,
+    #modal-porto,
+    #modal-ilheus,
+    #modal-salvador {
+        width: 780px !important;
+        max-width: calc(100vw - 80px) !important;
 
-  #modal-chapada form,
-  #modal-porto form,
-  #modal-ilheus form,
-  #modal-salvador form {
-    width: 100%;
-    padding: 24px 20px;
-    box-sizing: border-box;
-  }
+        left: 50% !important;
+        right: auto !important;
+        top: 50% !important;
 
-  #modal-chapada input,
-  #modal-chapada select,
-  #modal-chapada textarea,
-  #modal-porto input,
-  #modal-porto select,
-  #modal-porto textarea,
-  #modal-ilheus input,
-  #modal-ilheus select,
-  #modal-ilheus textarea,
-  #modal-salvador input,
-  #modal-salvador select,
-  #modal-salvador textarea {
-    font-size: 16px;
-    box-sizing: border-box;
-  }
+        transform: translate(-50%, -50%) !important;
+    }
 
-  #modal-chapada textarea,
-  #modal-porto textarea,
-  #modal-ilheus textarea,
-  #modal-salvador textarea {
-    width: 100%;
-    min-height: 110px;
-  }
+    #modal-chapada form,
+    #modal-porto form,
+    #modal-ilheus form,
+    #modal-salvador form {
+        width: 100% !important;
+        padding: 40px !important;
+        box-sizing: border-box;
+    }
+
+    #modal-chapada input,
+    #modal-chapada select,
+    #modal-chapada textarea,
+    #modal-porto input,
+    #modal-porto select,
+    #modal-porto textarea,
+    #modal-ilheus input,
+    #modal-ilheus select,
+    #modal-ilheus textarea,
+    #modal-salvador input,
+    #modal-salvador select,
+    #modal-salvador textarea {
+        font-size: 24px !important;
+    }
+
+    #modal-chapada textarea,
+    #modal-porto textarea,
+    #modal-ilheus textarea,
+    #modal-salvador textarea {
+        width: 100% !important;
+        min-height: 150px;
+        box-sizing: border-box;
+    }
 }
