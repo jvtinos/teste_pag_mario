@@ -1672,54 +1672,127 @@ header{
     }
 }
 
+/*corrigindo home */
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .fundo1chapada,
+  .fundo1ilheus,
+  .fundo1porto,
+  .fundo1salvador {
+    width: 100%;
+    min-height: 620px;
+
+    padding-top: 130px;
+    padding-bottom: 80px;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .avaliacao-geral {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .avaliacao-geral img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    width: 100%;
+    max-width: 360px;
+
+    font-size: 38px;
+    line-height: 0.95;
+
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .subtitulo {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+
+    font-size: 18px;
+    line-height: 1.15;
+
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+
+  .cta {
+    width: 220px;
+    height: 64px;
+    font-size: 19px;
+  }
+}
+
 /*corrigindo modal*/
-/* MODAL PARA CELULARES / TOUCH */
-@media (hover: none) and (pointer: coarse) {
 
-    #modal-chapada,
-    #modal-porto,
-    #modal-ilheus,
-    #modal-salvador {
-        width: 780px !important;
-        max-width: calc(100vw - 80px) !important;
+@media (max-width: 768px) {
 
-        left: 50% !important;
-        right: auto !important;
-        top: 50% !important;
+  #modal-chapada,
+  #modal-porto,
+  #modal-ilheus,
+  #modal-salvador {
+    width: 88%;
+    max-width: 420px;
+  }
 
-        transform: translate(-50%, -50%) !important;
-    }
+  #modal-chapada form,
+  #modal-porto form,
+  #modal-ilheus form,
+  #modal-salvador form {
+    width: 100%;
+    padding: 24px 20px;
+    box-sizing: border-box;
+  }
 
-    #modal-chapada form,
-    #modal-porto form,
-    #modal-ilheus form,
-    #modal-salvador form {
-        width: 100% !important;
-        padding: 40px !important;
-        box-sizing: border-box;
-    }
+  #modal-chapada input,
+  #modal-chapada select,
+  #modal-chapada textarea,
+  #modal-porto input,
+  #modal-porto select,
+  #modal-porto textarea,
+  #modal-ilheus input,
+  #modal-ilheus select,
+  #modal-ilheus textarea,
+  #modal-salvador input,
+  #modal-salvador select,
+  #modal-salvador textarea {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
 
-    #modal-chapada input,
-    #modal-chapada select,
-    #modal-chapada textarea,
-    #modal-porto input,
-    #modal-porto select,
-    #modal-porto textarea,
-    #modal-ilheus input,
-    #modal-ilheus select,
-    #modal-ilheus textarea,
-    #modal-salvador input,
-    #modal-salvador select,
-    #modal-salvador textarea {
-        font-size: 24px !important;
-    }
-
-    #modal-chapada textarea,
-    #modal-porto textarea,
-    #modal-ilheus textarea,
-    #modal-salvador textarea {
-        width: 100% !important;
-        min-height: 150px;
-        box-sizing: border-box;
-    }
+  #modal-chapada textarea,
+  #modal-porto textarea,
+  #modal-ilheus textarea,
+  #modal-salvador textarea {
+    width: 100%;
+    min-height: 110px;
+  }
 }
